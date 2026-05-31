@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick Kelly | PORT::ZERO | Contact & Links</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin: 0.5rem 0 0.25rem 0;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .link-card {
+            background-color: var(--card-bg);
+            color: var(--text-color) !important; /* Forces text to remain white/slate instead of default link blue */
+            text-decoration: none !important;    /* Hard-removes the browser's default text underline */
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+            border: 1px solid #334155;
+            display: block;
+        }
+        .link-card:visited, .link-card:active {
+            color: var(--text-color) !important;
+            text-decoration: none !important;
+        }
+        a, a:link, a:visited, a:hover, a:active {
+            text-decoration: none !important;
+            color: var(--text-color) !important;
+        }
+        .link-card:hover {
+            background-color: #334155;
+            transform: translateY(-2px);
+            border-color: var(--accent);
+            color: var(--accent) !important;
+        }
+        .footer {
+            margin-top: auto;
+            font-size: 0.8rem;
+            color: #64748b;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rick Kelly</h1>
+        <div class="subtitle">Founder / Principal Security Engineer</div>
+
+        <div class="links-container">
+            <a href="https://linkedin.com/in/richard-g-kelly" class="link-card" target="_blank" rel="noopener noreferrer">
+                LinkedIn Profile
+            </a>
+            
+            <a href="https://portzerocyber.com" class="link-card" target="_blank" rel="noopener noreferrer">
+                Personal Website
+            </a>
+            
+            <a href="https://github.com/port-zero-cyber" class="link-card" target="_blank" rel="noopener noreferrer">
+                GitHub Portfolio
+            </a>
+            
+            <a href="https://youtube.com/@PORTZEROCyberSolutions" class="link-card" target="_blank" rel="noopener noreferrer">
+                YouTube Channel
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 • No trackers • No cookies
+    </div>
+
+</body>
+</html>
